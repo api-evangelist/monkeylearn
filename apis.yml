@@ -1,0 +1,66 @@
+aid: monkeylearn
+name: MonkeyLearn
+description: Machine learning text analysis platform with REST APIs for sentiment analysis, keyword extraction, topic classification, and custom ML model training on text data. Now part of Medallia's experience management platform.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Text Analysis
+  - Machine Learning
+  - Sentiment Analysis
+  - Natural Language Processing
+  - Text Classification
+  - Keyword Extraction
+  - Artificial Intelligence
+apis:
+  - aid: monkeylearn:monkeylearn-api
+    name: MonkeyLearn API
+    description: REST API for text analysis including sentiment analysis, keyword extraction, topic classification, and custom ML model training. Supports classifiers and extractors with Token-based authentication.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://monkeylearn.com/api/
+    baseURL: https://api.monkeylearn.com/v3/
+    tags:
+      - Text Classification
+      - Named Entity Recognition
+      - Sentiment Analysis
+      - Keyword Extraction
+      - Machine Learning
+    properties:
+      - type: Documentation
+        url: https://monkeylearn.com/api/
+      - type: OpenAPI
+        url: https://new.monkeylearn.com/api/v3/
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/plans/plans.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/rate-limits/rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/finops/finops.yml
+common:
+  - type: Website
+    url: https://monkeylearn.com/
+  - type: Documentation
+    url: https://monkeylearn.com/api/
+  - type: GitHubOrg
+    url: https://github.com/monkeylearn
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/monkeylearn
+  - type: Blog
+    url: https://monkeylearn.com/blog/
+  - type: Pricing
+    url: https://monkeylearn.com/pricing/
+  - type: StatusPage
+    url: https://status.monkeylearn.com/
+  - type: X
+    url: https://twitter.com/monkeylearn
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/plans/plans.yml
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/rate-limits/rate-limits.yml
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/finops/finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,51 @@
+finops:
+  description: MonkeyLearn uses a query-based consumption model. A "query" represents one text item processed by one model. Costs scale with the number of queries consumed per month rather than per API request. MonkeyLearn was acquired by Medallia in February 2022 and enterprise pricing now aligns with the Medallia Experience Data Record (EDR) model.
+  reference: https://monkeylearn.com/pricing/
+
+  billing_model:
+    type: subscription
+    unit: queries
+    notes: >
+      A single API request can contain up to 200 text items (auto-batched by SDKs).
+      Each text item processed counts as one query against your monthly quota.
+      Custom model training does not consume queries but may require a higher-tier plan.
+
+  cost_drivers:
+    - name: Monthly Query Volume
+      description: Primary cost driver. Each text item processed through classifiers or extractors counts as one query. Plans are tiered by monthly query allowance.
+    - name: Custom Model Training
+      description: Training custom ML models on proprietary text data requires a paid plan. Training itself does not consume queries but is restricted by plan tier.
+    - name: Model Type
+      description: Built-in models (sentiment, keyword, topic) are available on all plans. Custom trained models require Team or Business plan.
+
+  optimization_tips:
+    - Batch requests at maximum size (200 texts per request) to minimize overhead and maximize throughput efficiency.
+    - Use the SDK auto-batching feature (enabled by default) to ensure optimal batch sizes without manual management.
+    - Cache classification or extraction results for frequently repeated texts to avoid redundant query consumption.
+    - Monitor monthly query usage via the MonkeyLearn dashboard to avoid unexpected overages.
+    - Use pre-built models for common tasks (sentiment, NER) before investing in custom model training.
+    - Evaluate whether a classifier (whole-text output) or extractor (entity-level output) is more appropriate to avoid running unnecessary models.
+
+  pricing_tiers:
+    - plan: Free
+      monthly_cost_usd: 0
+      included_queries: 300
+      overage_per_query_usd: null
+      notes: No overage; upgrade required when limit reached.
+
+    - plan: Team
+      monthly_cost_usd: 299
+      included_queries: 100000
+      overage_per_query_usd: null
+      notes: Contact support for additional query capacity.
+
+    - plan: Business / Enterprise
+      monthly_cost_usd: custom
+      included_queries: custom
+      overage_per_query_usd: custom
+      notes: Pricing through Medallia EDR model. Contact Medallia sales for a quote.
+
+  acquisition_note: >
+    MonkeyLearn was acquired by Medallia in February 2022. Standalone MonkeyLearn subscription plans
+    may be migrated or sunset over time. Enterprises should evaluate Medallia's unified text analytics
+    offering which bundles MonkeyLearn capabilities into the broader EDR-priced Medallia platform.

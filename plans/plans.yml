@@ -1,0 +1,51 @@
+plans:
+  - name: Free
+    description: Free tier for developers to explore MonkeyLearn text analysis capabilities with limited monthly queries.
+    url: https://monkeylearn.com/pricing/
+    price: 0
+    currency: USD
+    period: month
+    features:
+      - Access to pre-built classifiers and extractors
+      - Limited monthly queries
+      - Python, Ruby, Node.js, PHP, Java SDKs
+      - REST API access
+      - Token-based authentication
+    limits:
+      queries_per_month: 300
+      requests_per_minute: 20
+
+  - name: Team
+    description: Team plan for small to mid-size businesses needing regular text analysis processing with higher query limits.
+    url: https://monkeylearn.com/pricing/
+    price: 299
+    currency: USD
+    period: month
+    features:
+      - All Free features
+      - Higher monthly query limit
+      - Custom model training
+      - Sentiment analysis
+      - Keyword extraction
+      - Topic classification
+      - Auto-batching support (up to 200 texts per request)
+      - Priority support
+    limits:
+      queries_per_month: 100000
+      requests_per_minute: 120
+
+  - name: Business
+    description: Business plan for larger organizations requiring high-volume text analysis and enterprise features.
+    url: https://monkeylearn.com/pricing/
+    price: null
+    currency: USD
+    period: month
+    notes: Contact sales for pricing. Now part of Medallia Experience Data Record (EDR) pricing model.
+    features:
+      - All Team features
+      - Enterprise-grade query volumes
+      - Custom ML model training and deployment
+      - Advanced text analysis pipelines
+      - Dedicated support
+      - SLA guarantees
+      - Medallia platform integration

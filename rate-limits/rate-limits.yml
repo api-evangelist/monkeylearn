@@ -1,0 +1,49 @@
+rate_limits:
+  description: MonkeyLearn enforces three tiers of rate limiting to ensure fair usage across all API consumers. A "query" is the unit of consumption — one request may count as zero, one, or multiple queries depending on text count and model type. SDKs include built-in throttle handling with automatic retry logic.
+  reference: https://help.monkeylearn.com/en/articles/2174290-does-monkeylearn-have-a-throttle-limit
+
+  limits:
+    - name: Monthly Query Limit
+      description: Maximum number of queries allowed per billing month, determined by your plan tier. Exceeding this limit raises a PlanQueryLimitError.
+      scope: account
+      period: month
+      unit: queries
+      tiers:
+        - plan: Free
+          limit: 300
+        - plan: Team
+          limit: 100000
+        - plan: Business
+          limit: custom
+
+    - name: Per-Minute Rate Limit
+      description: Maximum number of API requests allowed per minute. SDK clients automatically retry with backoff when this limit is reached.
+      scope: account
+      period: minute
+      unit: requests
+      tiers:
+        - plan: Free
+          limit: 20
+        - plan: Team
+          limit: 120
+        - plan: Business
+          limit: custom
+
+    - name: Per-Request Batch Size
+      description: Maximum number of text items that can be submitted in a single API request. SDK auto-batching handles splitting larger datasets automatically.
+      scope: request
+      unit: texts
+      limit: 200
+
+  error_codes:
+    - code: PlanQueryLimitError
+      description: Monthly query quota for the current plan has been exceeded.
+    - code: PlanRateLimitError
+      description: Per-minute request rate limit has been exceeded; retry after a short delay.
+    - code: ConcurrencyRateLimitError
+      description: Too many simultaneous requests; reduce concurrency and retry.
+
+  notes:
+    - The MonkeyLearn Python, Ruby, Node.js, PHP, and Java SDKs include automatic throttle handling with configurable retry behavior.
+    - Auto-batching (enabled by default) transparently splits large text arrays into compliant batches.
+    - MonkeyLearn is now part of Medallia; enterprise rate limits are negotiated as part of the EDR pricing model.
