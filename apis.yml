@@ -1,7 +1,7 @@
 aid: monkeylearn
 name: MonkeyLearn
 description: Machine learning text analysis platform with REST APIs for sentiment analysis, keyword extraction, topic classification, and custom ML model training on text data. Now part of Medallia's experience management platform.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -18,7 +18,7 @@ apis:
   - aid: monkeylearn:monkeylearn-api
     name: MonkeyLearn API
     description: REST API for text analysis including sentiment analysis, keyword extraction, topic classification, and custom ML model training. Supports classifiers and extractors with Token-based authentication.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://monkeylearn.com/api/
     baseURL: https://api.monkeylearn.com/v3/
     tags:
