@@ -3,10 +3,17 @@
   "url": "https://monkeylearn.com/blog/",
   "retrieved": "2026-06-13",
   "status": "defunct",
-  "notes": "MonkeyLearn has been acquired by Medallia. The monkeylearn.com domain now redirects to medallia.com. The original MonkeyLearn blog at https://monkeylearn.com/blog/ is no longer accessible. No blog posts could be retrieved.",
+  "notes": "MonkeyLearn was acquired by Medallia. The monkeylearn.com/blog/ URL now serves Medallia's corporate customer-experience blog (RSS resolves at https://monkeylearn.com/feed/), not MonkeyLearn API/text-analysis content. The original MonkeyLearn blog is gone. The live feed's posts (e.g. 'We're Reinventing Medallia for the AI Era', '5 Hard Truths from the 2026 State of Customer Experience') belong to Medallia, not MonkeyLearn, so none are saved to this repo.",
   "posts": [],
   "repo": "monkeylearn",
   "feeds": [
+    {
+      "source": "https://monkeylearn.com/feed/",
+      "feed_url": "https://monkeylearn.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/company/monkeylearn",
       "feed_url": "https://www.linkedin.com/company/monkeylearn",
@@ -16,5 +23,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
