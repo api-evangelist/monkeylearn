@@ -39,6 +39,8 @@ apis:
       - type: FinOps
         url: https://raw.githubusercontent.com/api-evangelist/monkeylearn/refs/heads/main/finops/finops.yml
 common:
+  - type: DomainSecurity
+    url: security/monkeylearn-domain-security.yml
   - type: Website
     url: https://monkeylearn.com/
   - type: Documentation
