@@ -22,6 +22,7 @@ accessModel:
   confidence: medium
   source:
   - plans
+  - {url: 'https://monkeylearn.com/', status: 301, note: 'declared website redirects to https://www.medallia.com/ — a different registrable domain (monkeylearn.com -> medallia.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/monkeylearn.png
