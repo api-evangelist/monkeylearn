@@ -32,7 +32,7 @@ modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
   - Text Analysis
-  - Machine-Learning
+  - Machine Learning
   - Sentiment Analysis
   - Natural Language Processing
   - Text Classification
@@ -46,6 +46,7 @@ tags_raw:
   - Text Classification
   - Keyword Extraction
   - Artificial Intelligence
+  - Machine-Learning
 apis:
   - aid: monkeylearn:monkeylearn-api
     name: MonkeyLearn API
@@ -58,13 +59,14 @@ apis:
       - Named Entity Recognition
       - Sentiment Analysis
       - Keyword Extraction
-      - Machine-Learning
+      - Machine Learning
     tags_raw:
       - Text Classification
       - Named Entity Recognition
       - Sentiment Analysis
       - Keyword Extraction
       - Machine Learning
+      - Machine-Learning
     properties:
       - type: Documentation
         url: https://monkeylearn.com/api/
