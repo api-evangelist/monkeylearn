@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 rate_limits:
   description: MonkeyLearn enforces three tiers of rate limiting to ensure fair usage across all API consumers. A "query" is the unit of consumption — one request may count as zero, one, or multiple queries depending on text count and model type. SDKs include built-in throttle handling with automatic retry logic.
   reference: https://help.monkeylearn.com/en/articles/2174290-does-monkeylearn-have-a-throttle-limit
