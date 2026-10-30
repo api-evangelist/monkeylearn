@@ -64,30 +64,105 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Machine learning text analysis platform with REST APIs for sentiment analysis, keyword extraction, topic classification, and custom ML model training on text data. MonkeyLearn was acquired by Medallia in February 2022 and its capabilities are now part of the Medallia experience management platform.
+Machine learning text analysis platform with REST APIs for sentiment analysis, keyword extraction, topic classification, and custom ML model training on text data. Now part of Medallia's experience management platform.
 
-## API
+**Areas:** Text Analysis · Machine Learning · Sentiment Analysis · Natural Language Processing · Text Classification · Keyword Extraction · Artificial Intelligence
 
-The MonkeyLearn REST API v3 (`https://api.monkeylearn.com/v3/`) provides two primary resource types:
+## MonkeyLearn on APIs.io
 
-- **Classifiers** (`/v3/classifiers/{model_id}/classify/`) — analyze whole texts and assign categories, sentiments, or topics
-- **Extractors** (`/v3/extractors/{model_id}/extract/`) — identify and extract named entities, keywords, and other structured information from text
+Everything profiled for MonkeyLearn is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/monkeylearn/](https://apis.io/providers/monkeylearn/)** — or go straight to one of the APIs or properties below.
 
-Authentication uses token-based headers: `Authorization: Token YOUR_API_KEY`.
+### APIs (1)
 
-Official SDKs are available for Python, Ruby, Node.js, PHP, and Java. All SDKs include built-in auto-batching (up to 200 texts per request) and automatic throttle retry handling.
+- [MonkeyLearn API](https://apis.io/apis/monkeylearn/monkeylearn-api/) — REST API for text analysis including sentiment analysis, keyword extraction, topic classification, and custom ML model training. Supports classifiers and…
 
-## Links
+### Published properties
 
-- **Website:** https://monkeylearn.com/
-- **Documentation:** https://monkeylearn.com/api/
-- **GitHub:** https://github.com/monkeylearn
-- **Blog:** https://monkeylearn.com/blog/
-- **Pricing:** https://monkeylearn.com/pricing/
-- **Status:** https://status.monkeylearn.com/
-- **X (Twitter):** https://twitter.com/monkeylearn
-- **LinkedIn:** https://www.linkedin.com/company/monkeylearn
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs.json
+#### Security (1)
 
-This repository contains an APIs.json 0.19 profile for MonkeyLearn maintained by [API Evangelist](https://apievangelist.com).
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Monkeylearn Domain Security](https://apis.io/security/monkeylearn/monkeylearn-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Plans](https://apis.io/plans/monkeylearn/plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rate Limits](https://apis.io/rate-limits/monkeylearn/rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Finops](https://apis.io/finops/monkeylearn/finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://monkeylearn.com/)
+- [Documentation](https://monkeylearn.com/api/)
+- [Pricing](https://monkeylearn.com/pricing/)
+- [Blog](https://monkeylearn.com/blog/)
+- [Status](https://status.monkeylearn.com/)
+
+## API Evangelist rating
+
+**Kin Score 17.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 18.4 |
+
+**Agent readiness 15.5** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/monkeylearn/](https://apis.io/providers/monkeylearn/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MonkeyLearn: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/monkeylearn/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
